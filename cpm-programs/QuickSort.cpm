@@ -1,0 +1,57 @@
+int partition(int v, int a, int b) {
+  int i, j, p, aux, c;
+  c = v[a];
+  i = p + 1;
+  j = b;
+
+  while (i <= j) {
+    if (v[i] < c)
+      i = i + 1;
+    if (v[i] > c)
+      j = j - 1;
+  }
+
+  if (v[i] > c && v[j] < c) {
+    aux = v[i];
+    v[i] = v[j];
+    v[j] = aux;
+    i = i + 1;
+    j = j - 1;
+  }
+
+  v[p] = v[j];
+  v[j] = c;
+  return j;
+}
+
+int quickSort(int v, int o, int r) {
+  int j;
+  if (o < r) {
+    j = partition(v, o, r);
+    quickSort(v, o, j - 1);
+    quickSort(v, j + 1, r);
+  }
+  return 0;
+}
+
+int main() {
+  int p;
+  int t;
+  int v[5];
+  v[0] = 2;
+  v[1] = 1;
+  v[2] = 4;
+  v[3] = 5;
+  v[4] = 3;
+  t = 5;
+  p = v[0];
+
+  quickSort(v, p, t - 1);
+
+  print(v[0], "\n");
+  print(v[1], "\n");
+  print(v[2], "\n");
+  print(v[3], "\n");
+  print(v[4], "\n");
+  return 0;
+}

@@ -1,0 +1,19 @@
+int fatorial(int x) {
+  int fat;
+  if (x == 1) {
+    return 1;
+  } else {
+    fat = x * fatorial(x - 1);
+  }
+  return fat;
+}
+
+int main() {
+  int x;
+  int y;
+  x = 4;
+  y = fatorial(x);
+
+  print(y);
+  return y;
+}

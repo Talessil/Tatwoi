@@ -1,0 +1,476 @@
+
+int get_token() {
+  int state;
+  state = 0;
+  while (true) {
+    switch (state) {
+      case 0:
+        initialize_lexeme();
+        switch (character) {
+          case 64:              /* PULA ESSE CASE NA IMPRESSÃO DA ASA*/
+          case 65:              /* PULA ESSE CASE NA IMPRESSÃO DA ASA*/
+          case 66:
+            character = next_character();
+            state = 0;
+            break;
+          case 67:
+            state = 1;
+            break;
+          case 68:
+            character = next_character();
+            state = 2;
+            break;
+          case 69:
+            character = next_character();
+            state = 3;
+            break;
+          case 70:
+            character = next_character();
+            state = 4;
+            break;
+          case 71:
+            character = next_character();
+            state = 5;
+            break;
+          case 72:
+            character = next_character();
+            state = 6;
+            break;
+          case 73:
+            character = next_character();
+            state = 7;
+            break;
+          case 74:
+            character = next_character();
+            state = 8;
+            break;
+          case 75:
+            character = next_character();
+            state = 9;
+            break;
+          case 76:
+            character = next_character();
+            state = 10;
+            break;
+          case 77:
+            character = next_character();
+            state = 11;
+            break;
+          case 78:
+            character = next_character();
+            state = 12;
+            break;
+          case 79:
+            character = next_character();
+            state = 13;
+            break;
+          case 80:
+            character = next_character();
+            state = 14;
+            break;
+          case 81:
+            character = next_character();
+            state = 17;
+            break;
+          case 82:
+            character = next_character();
+            state = 20;
+            break;
+          case 83:
+            character = next_character();
+            state = 23;
+            break;
+          case 84:
+            character = next_character();
+            state = 26;
+            break;
+          case 85:
+            character = next_character();
+            state = 30;
+            break;
+          case 86:
+            character = next_character();
+            state = 33;
+            break;
+          case 87:
+            character = next_character();
+            state = 36;
+            break;
+          case 88:
+            character = next_character();
+            state = 40;
+            break;
+          case 89:
+            character = next_character();
+            state = 43;
+            break;
+          case 90:
+            character = next_character();
+            state = 47;
+            break;
+          case 91:
+            character = next_character();
+            state = 59;
+            break;
+          case 92:
+            if (isalpha(character) || character == '_') {          /*ASA PARA DE IMPRIMIR AQUI*/
+              character = next_character();
+              state = 41;
+              break;
+            } else if (isdigit(character)) {
+              character = next_character();
+              state = 51;
+              break;
+            } else {
+              character = next_character();
+              state = 61;
+              break;
+            }
+          case 93:
+        }
+        break;
+      case 1:
+        return EOF_TOKEN;
+      case 2:
+        return SEMICOLON;
+      case 3:
+        return COLON;
+      case 4:
+        return COMMA;
+      case 5:
+        return RBRACE;
+      case 6:
+        return LBRACE;
+      case 7:
+        return RBRACKET;
+      case 8:
+        return LBRACKET;
+      case 9:
+        return RPAREN;
+      case 10:
+        return LPAREN;
+      case 11:
+        return MULT;
+      case 12:
+        return MOD;
+      case 13:
+        return PLUS;
+      case 14:
+        if (character == '&') {
+          character = next_character();
+          state = 15;
+          break;
+        } else {
+          state = 16;
+          break;
+        }
+      case 15:
+        return AND;
+      case 16:
+        return AND_BIT;
+      case 17:
+        if (character == '|') {
+          character = next_character();
+          state = 18;
+          break;
+        } else {
+          state = 19;
+          break;
+        }
+      case 18:
+        return ALTERNATIVE;
+      case 19:
+        return ALTERNATIVE_BIT;
+      case 20:
+        if (character == '=') {
+          character = next_character();
+          state = 21;
+          break;
+        } else {
+          state = 22;
+          break;
+        }
+      case 21:
+        return GTE;
+      case 22:
+        return GT;
+      case 23:
+        if (character == '=') {
+          character = next_character();
+          state = 25;
+          break;
+        } else {
+          state = 24;
+          break;
+        }
+      case 24:
+        return LT;
+      case 25:
+        return LTE;
+      case 26:
+        if (character == '=') {
+          character = next_character();
+          state = 27;
+          break;
+        } else {
+          state = 28;
+          break;
+        }
+      case 27:
+        return EQUAL;
+      case 28:
+        return ASSIGN;
+      case 30:
+        if (character == '=') {
+          character = next_character();
+          state = 31;
+          break;
+        } else {
+          state = 32;
+          break;
+        }
+      case 31:
+        return NOTEQUAL;
+      case 32:
+        return BANG;
+      case 33:
+        if (character == '>') {
+          character = next_character();
+          state = 34;
+          break;
+        } else {
+          state = 35;
+          break;
+        }
+      case 34:
+        return POINTER;
+      case 35:
+        return MINUS;
+      case 36:
+        if (character == '*') {
+          character = next_character();
+          state = 38;
+          break;
+        } else {
+          state = 37;
+          break;
+        }
+      case 37:
+        return DIV;
+      case 38:
+        if (character == '*') {
+          character = next_character();
+          state = 39;
+          break;
+        } else if (character == EOF) {
+          state = 46;
+          break;
+        } else if (character == '\n') {
+          character = next_character();
+          state = 38;
+          +line_count;
+          break;
+        } else {
+          character = next_character();
+          state = 38;
+          break;
+        }
+      case 39:
+        if (character == '/') {
+          character = next_character();
+          state = 0;
+          break;
+        } else {
+          character = next_character();
+          state = 38;
+          break;
+        }
+      case 40:
+        +line_count;
+        state = 0;
+        break;
+      case 41:
+        if (isalnum(character) || character == '_') {
+          character = next_character();
+          state = 41;
+          break;
+        } else {
+          state = 42;
+          break;
+        }
+      case 42: {
+        ReservedSymbol *r_symbol = reserved_table->lookup(lexeme_name());
+        if (r_symbol != nullptr)
+          return r_symbol->get_token_id();
+        else {
+          identifier_table->insert(lexeme_name());
+          return ID;
+        }
+      }
+      case 43:
+        if (character == '\"') {
+          character = next_character();
+          state = 45;
+          break;
+        } else if (character == '\\') {
+          character = next_character();
+          state = 44;
+          break;
+        } else if (character == EOF) {
+          state = 63;
+          break;
+        } else {
+          character = next_character();
+          state = 43;
+          break;
+        }
+      case 44:
+        if (character == EOF) {
+          state = 63;
+          break;
+        } else {
+          character = next_character();
+          state = 43;
+          break;
+        }
+      case 45:
+        literal_table->insert(lexeme_name());
+        return LITERAL;
+      case 46:
+        print_error_and_restart(ERROR_EOF_COMMENT, state);
+        break;
+      case 47:
+        if (character == EOF) {
+          state = 64;
+          break;
+        } else if (character == '\\') {
+          character = next_character();
+          state = 48;
+          break;
+        } else {
+          character = next_character();
+          state = 49;
+          break;
+        }
+      case 48:
+        if (character == EOF) {
+          state = 64;
+          break;
+        } else {
+          character = next_character();
+          state = 49;
+          break;
+        }
+      case 49:
+        if (character == EOF) {
+          state = 64;
+          break;
+        } else if (character == '\'') {
+          character = next_character();
+          state = 50;
+          break;
+        } else {
+          state = 62;
+          break;
+        }
+      case 50:
+        return CHARACTER;
+      case 51:
+        if (isdigit(character)) {
+          character = next_character();
+          state = 51;
+          break;
+        } else if (character == '.') {
+          character = next_character();
+          state = 58;
+          break;
+        } else if (character == 'e' || character == 'E') {
+          character = next_character();
+          state = 53;
+          break;
+        } else {
+          state = 52;
+          break;
+        }
+      case 52:
+        integer_table->insert(lexeme_name());
+        return INTEGER;
+      case 53:
+        if (character == '+' || character == '-') {
+          character = next_character();
+          state = 55;
+          break;
+        } else if (isdigit(character)) {
+          character = next_character();
+          state = 56;
+          break;
+        } else {
+          state = 54;
+          break;
+        }
+      case 54:
+        print_error_and_restart(ERROR_WRONG_NUMBER, state);
+        break;
+      case 55:
+        if (isdigit(character)) {
+          character = next_character();
+          state = 56;
+          break;
+        } else {
+          state = 54;
+          break;
+        }
+      case 56:
+        if (isdigit(character)) {
+          character = next_character();
+          state = 56;
+          break;
+        } else {
+          state = 57;
+          break;
+        }
+      case 57:
+        real_table->insert(lexeme_name());
+        return REAL;
+      case 58:
+        if (isdigit(character)) {
+          character = next_character();
+          state = 58;
+          break;
+        } else if (character == 'e' || character == 'E') {
+          character = next_character();
+          state = 53;
+          break;
+        } else {
+          state = 57;
+          break;
+        }
+      case 59:
+        if (isdigit(character)) {
+          character = next_character();
+          state = 58;
+          break;
+        } else {
+          state = 60;
+          break;
+        }
+      case 60:
+        return PERIOD;
+      case 61:
+        print_error_and_restart(ERROR_INVALID_CHARACTER, state);
+        break;
+      case 62:
+        print_error_and_restart(ERROR_INVALID_CHAR_CONSTRUCTION, state);
+        break;
+      case 63:
+        print_error_and_restart(ERROR_EOF_LITERAL, state);
+        break;
+      case 64:
+        print_error_and_restart(ERROR_EOF_CHARACTER, state);
+        break;
+      case 65:
+    }
+  }
+  return 0;
+}
+

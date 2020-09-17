@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="tatwoi" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/tatwoi" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="cpm-programs/arq.cpm" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/tatwoi" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-stmt" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="ast.cpp" />
+		<Unit filename="ast.h" />
+		<Unit filename="error_manager.c">
+			<Option compilerVar="CPP" />
+		</Unit>
+		<Unit filename="error_manager.h" />
+		<Unit filename="generate_assembly.c">
+			<Option compilerVar="CPP" />
+		</Unit>
+		<Unit filename="generate_assembly.h" />
+		<Unit filename="intermediate_code.cpp" />
+		<Unit filename="intermediate_code.h" />
+		<Unit filename="ir_visitor.c">
+			<Option compilerVar="CPP" />
+		</Unit>
+		<Unit filename="ir_visitor.h" />
+		<Unit filename="lex_analyzer.c">
+			<Option compilerVar="CPP" />
+		</Unit>
+		<Unit filename="lex_analyzer.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CPP" />
+		</Unit>
+		<Unit filename="parser.c">
+			<Option compilerVar="CPP" />
+		</Unit>
+		<Unit filename="parser.h" />
+		<Unit filename="queue.cpp" />
+		<Unit filename="queue.h" />
+		<Unit filename="semantic_analyzer.c">
+			<Option compilerVar="CPP" />
+		</Unit>
+		<Unit filename="semantic_analyzer.h" />
+		<Unit filename="symbol.cpp" />
+		<Unit filename="symbol.h" />
+		<Unit filename="table.cpp" />
+		<Unit filename="table.h" />
+		<Unit filename="translator.cpp" />
+		<Unit filename="translator.h" />
+		<Unit filename="visitor.cpp" />
+		<Unit filename="visitor.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

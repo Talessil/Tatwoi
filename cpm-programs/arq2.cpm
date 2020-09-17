@@ -1,0 +1,214 @@
+/*class a {
+    class b {};
+};*/
+
+/*typedef struct {
+  int x, y = 0;
+} position;*/
+
+/*int main() {
+  int a, c, k;
+  a = c + (*g[]) - &a * (8 % 2);
+}/* */
+
+/*class a {
+    class b {
+    };
+};*/
+
+/*typedef struct {
+  int a = 5;
+} main;*/
+
+/*class , {
+
+};/**/
+
+/*
+int main(){
+  k.a[4];
+}*/
+/*OK*//*
+
+
+
+int main() {
+  int a;
+  k();
+  g();
+  a + b = c + d;
+  l();
+}*/
+/* OK, LVALUE E RVALUE SERÃO TRATADOS PELO SEMÂNTICO *//*
+
+
+
+int main() {
+  int a[3];
+  a[5] = 9 - 8;
+  (a + b) = g();
+}*/
+/* ***OK*//*
+
+
+
+int main() {
+  int a, c, k;
+  a = c + (*g[a]) - &a * (8 % 2);
+}*/
+/* AS VARIÁVEIS DE UMA MESMA SEQUENCIA(int a, c, k) APARECEM EM "IDLIST"s DIFERENTES NA AST (NÃO SEI SE É, NECESSARIAMENTE, UM ERRO) - HYGOR *//*
+
+
+
+int main(){
+  int a, b, c, d, e, f;
+  float g, h, i;
+  char k;
+  g = 0.111111;
+  a = 9.;
+  k = 'a';
+}*/
+/* ***OK* LEMBRAR: DECLARAÇÕES SÃO SEMPRE ANTES *//*
+
+
+int programinha_simples() {
+  int a[3.0];
+  if (a->5->g.h[4.]) {}
+}*/
+/*ERRO NO ARRAY COM REAL*//*
+
+
+int ifunction() {
+  if (a) {
+    if (a) {
+      if (b) {}
+      if (c) {}
+      if (f-a) {} else {}
+      if (i9) {}
+    } else {}
+  } else {}
+  if (a) {
+    if (a) {
+      if (er) {
+        if (a) {
+          if (a) {
+            if (v) {}
+            if (coca) {}
+            if (guarana) {} else {}
+            if (new CAFE()) {}
+          } else {}
+        } else {}
+      }
+      if (rrr) {}
+      if (!t) {} else {}
+      if (a->5..g.h[4]) {}
+    } else {}
+  } else {}
+}*/
+/* *** OK*//*
+
+
+
+int func2() {
+  throw;
+}*/
+/* ***OK*//*
+
+
+int fonc() {
+  try a; catch ( ... ) b;
+}*/
+/**//*
+
+
+int func() {
+  if (a <= b) {
+    return (a + b);
+    if (a == b) {
+      while (c < b) {
+        switch (d) {
+          case 1:
+            if (e != 99) print("eita");
+            else readln(a);
+          case 2:
+            try
+            j(a);
+            catch (...)
+            throw;
+          case 3: */
+/*ESTÁ SENDO OBRIGATÓRIO PELA GRAMÁTICA*//*
+
+        }
+        if (*var = a->b) {
+          if (*a == &b) return (a && b);
+        }
+
+        func();
+        *func();
+        &func() = func2();
+      }
+    }
+  }
+}*/
+/* OK*//*
+
+
+
+int func() {
+  if (a <= b) {
+    return (new var(par1, par2));
+  }
+}*/
+/* ***OK *//*
+
+
+
+typedef struct {
+  int a;
+  float b;
+  char c;
+  bool d;
+  variavel e;
+} definicao;
+*/
+/***OK*//*
+
+
+
+int main() {
+  func();
+  a();
+  b();
+  a = 8;
+  new id(a - 9, b / 9, c + 9 + 9 + (8 / 5));
+  func2();
+
+} */
+/***OK *//*
+
+
+
+int main() {
+  int a, b;
+  a + new classe2();
+  if (a == b) {
+    print("isso ai");
+  }
+  new classe();
+}*/
+/***arrumar problema do new - (acho que sei arrumar, arrumar qnd encontrar com Hygor) *//*
+
+
+
+int main() {
+  a.b.c.d.e.f;
+  a->c.a = 2 + r->g();
+  b + 3 = 8;
+  a->b;
+} */
+/* NAO TA IMPRIMINDO O QUE VEM ANTES DE "->" e "." - HYGOR *//*
+
+
+
+*/
+

@@ -1,0 +1,15 @@
+int *fat(int n) {
+  if ((n == 1) || (n == 0)) return 1;
+  else
+    return fat(n - 1) * n;
+  return null;
+}
+
+int main() {
+  int n;
+  printf("Informe o numero que deseja obter o fatorial:\n");
+  scanf("%d", &n);
+  printf("O fatorial de %d eh %d \n", n, fat(n));
+}
+
+/*esse teste demonstra erro na impressão do ELSE*/

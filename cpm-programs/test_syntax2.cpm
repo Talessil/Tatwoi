@@ -1,0 +1,16 @@
+int main() {
+  float i, j;
+  int k;
+  x = 5 - h;
+  print("test");
+}
+
+int sub() {
+  print("TEST");
+}
+
+class One {
+};
+
+class Two : One {
+};

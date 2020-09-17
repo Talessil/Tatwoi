@@ -1,0 +1,34 @@
+int main() {
+  int i, i2, j, aux;
+  int v[5];
+  int size;
+  size = 5;
+  i = 0;
+  i2 = 1;
+  j = 0;
+  v[0] = 3;
+  v[1] = 2;
+  v[2] = 1;
+  v[3] = 5;
+  v[4] = 4;
+  while (j < size) {
+    while (i2 < size) {
+      if (v[i] > v[i2]) {
+        aux = v[i];
+        v[i] = v[i2];
+        v[i2] = aux;
+      }
+      i = i + 1;
+      i2 = i2 + 1;
+    }
+    i = 0;
+    i2 = 1;
+    j = j + 1;
+  }
+  print(v[0], "\n");
+  print(v[1], "\n");
+  print(v[2], "\n");
+  print(v[3], "\n");
+  print(v[4], "\n");
+  return 0;
+}

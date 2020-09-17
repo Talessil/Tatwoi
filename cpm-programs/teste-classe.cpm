@@ -1,0 +1,35 @@
+class Conta {
+    int numero;
+    string nome;
+    float saldo;
+  public:
+    int inicializa(string n, float s) {
+    }
+
+    int deposita(float valor) {
+    }
+
+    int consulta() {
+    }
+
+    int saque(float valor) {
+    }
+};
+
+
+void main() {
+  Conta MinhaConta;
+  Conta *OutraConta;
+
+  MinhaConta.saldo = 10;
+
+  MinhaConta.inicializa("Fulano", 10.25);
+  OutraConta->inicializa("Beltrano", 220.00);
+
+  MinhaConta.deposita(12.75);
+  MinhaConta.consulta();
+  MinhaConta.saque(15.00);
+  MinhaConta.consulta();
+
+  OutraConta->consulta();
+}

@@ -1,0 +1,412 @@
+# depslib dependency file v1.0
+0 
+
+1503849716 source:/home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/main.cpp
+	<iostream>
+	<iostream>
+	"table.h"
+
+1508953574 source:/home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/lex_analyzer.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"lex_analyzer.h"
+	"error_manager.h"
+	"table.h"
+
+1512675111 source:/home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lex_analyzer.h"
+	"parser.h"
+	"semantic_analyzer.h"
+	"error_manager.h"
+	"generate_assembly.h"
+
+1512345026 /home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/lex_analyzer.h
+	<stdio.h>
+
+1512586158 /home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/error_manager.h
+
+1512586158 source:/home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/error_manager.c
+	<stdio.h>
+	"error_manager.h"
+	"lex_analyzer.h"
+	"parser.h"
+
+1503868395 ager.h"
+
+1512649824 source:/home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/symbol.cpp
+	<cstdlib>
+	"symbol.h"
+
+1512649824 /home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/symbol.h
+	"ast.h"
+	"table.h"
+
+1512674315 source:/home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/table.cpp
+	<cstring>
+	<cstdlib>
+	<iostream>
+	"table.h"
+
+1512653210 /home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/table.h
+	"symbol.h"
+
+1503353085 source:/home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/tests-main.cpp
+	"catch.hpp"
+
+1503353015 /home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/catch.hpp
+	<sstream>
+	<algorithm>
+	<string>
+	<vector>
+	<string>
+	<cstddef>
+	<sstream>
+	<iomanip>
+	<limits>
+	<vector>
+	<cstddef>
+	<tuple>
+	<type_traits>
+	<string>
+	<string>
+	<string>
+	<signal.h>
+	<cstddef>
+	<string>
+	<stdint.h>
+	<string>
+	<vector>
+	<string>
+	<stdlib.h>
+	<string>
+	<vector>
+	<string>
+	<cmath>
+	<limits>
+	<type_traits>
+	<string>
+	<string>
+	<set>
+	<string>
+	<crtdbg.h>
+	<stdexcept>
+	<string>
+	<vector>
+	<iosfwd>
+	<string>
+	<vector>
+	<streambuf>
+	<streambuf>
+	<ostream>
+	<fstream>
+	<memory>
+	<memory>
+	<vector>
+	<string>
+	<stdexcept>
+	<string>
+	<vector>
+	<sstream>
+	<algorithm>
+	<cctype>
+	<map>
+	<stdexcept>
+	<memory>
+	<fstream>
+	<ctime>
+	<string>
+	<vector>
+	<sstream>
+	<string>
+	<ostream>
+	<map>
+	<limits>
+	<algorithm>
+	<algorithm>
+	<string>
+	<assert.h>
+	<vector>
+	<stdexcept>
+	<AfxWin.h>
+	<windows.h>
+	<signal.h>
+	<set>
+	<string>
+	<fstream>
+	<stdlib.h>
+	<limits>
+	<vector>
+	<set>
+	<sstream>
+	<algorithm>
+	<map>
+	<map>
+	<sstream>
+	<stdexcept>
+	<cstdio>
+	<iostream>
+	<cerrno>
+	<unistd.h>
+	<vector>
+	<string>
+	<map>
+	<cctype>
+	<sys/time.h>
+	<cstring>
+	<cctype>
+	<assert.h>
+	<stdbool.h>
+	<sys/types.h>
+	<unistd.h>
+	<sys/sysctl.h>
+	<fstream>
+	<string>
+	<cstring>
+	<cfloat>
+	<cstdio>
+	<assert.h>
+	<sstream>
+	<string>
+	<vector>
+	<iomanip>
+	<assert.h>
+	<cfloat>
+	<cstdio>
+
+1503357286 source:/home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/tests-symbol.cpp
+	<string.h>
+	"catch.hpp"
+	"symbol.h"
+
+1503491628 source:/home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/tests-table.cpp
+	<string.h>
+	"catch.hpp"
+	"table.h"
+
+1503849716 bol-table
+
+1512674780 source:/home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/ast.cpp
+	"ast.h"
+
+1512618438 /home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/ast.h
+	<cstdlib>
+	"visitor.h"
+	"translator.h"
+	"intermediate_code.h"
+
+1512430857 /home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/visitor.h
+
+1508811905 /home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/parser.h
+	"ast.h"
+
+1512290652 source:/home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/visitor.cpp
+	<iostream>
+	<cstring>
+	"visitor.h"
+	"ast.h"
+	"lex_analyzer.h"
+
+1512548050 source:/home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/parser.c
+	"parser.h"
+	"lex_analyzer.h"
+	"error_manager.h"
+
+1512646203 /home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/translator.h
+
+1512511224 source:/home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/canonizer.c
+	<cstdio>
+	"canonizer.h"
+
+1512582433 /home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/canonizer.h
+	"intermediate_code.h"
+
+1512674997 /home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/intermediate_code.h
+	"ir_visitor.h"
+	"generate_assembly.h"
+
+1512646813 /home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/ir_visitor.h
+	"intermediate_code.h"
+
+1512670033 source:/home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/intermediate_code.cpp
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	"intermediate_code.h"
+	"lex_analyzer.h"
+
+1512670388 source:/home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/ir_visitor.c
+	<iostream>
+	"ir_visitor.h"
+	"lex_analyzer.h"
+	"translator.h"
+
+1512611258 /home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/semantic_analyzer.h
+	"visitor.h"
+	"table.h"
+
+1512675023 source:/home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/semantic_analyzer.c
+	"semantic_analyzer.h"
+	"table.h"
+	"lex_analyzer.h"
+	"error_manager.h"
+	<typeinfo>
+
+1512668880 source:/home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/translator.cpp
+	<cstdio>
+	<cstring>
+	"intermediate_code.h"
+	"translator.h"
+	"ast.h"
+	"lex_analyzer.h"
+	"table.h"
+	"semantic_analyzer.h"
+
+1512662670 /home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/generate_assembly.h
+	<stdio.h>
+	"intermediate_code.h"
+	"queue.h"
+
+1512660019 /home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/queue.h
+
+1512661054 source:/home/hygor/Dropbox/Faculdade/Teoria dos Compiladores/trabalho/compilador-cpm/queue.cpp
+	<cstdlib>
+	"queue.h"
+
+1512759250 source:c:\users\hygor\documents\github\dcc045-2017.3-cpm\error_manager.c
+	<stdio.h>
+	"error_manager.h"
+	"lex_analyzer.h"
+	"parser.h"
+
+1512759250 c:\users\hygor\documents\github\dcc045-2017.3-cpm\error_manager.h
+
+1512759250 c:\users\hygor\documents\github\dcc045-2017.3-cpm\lex_analyzer.h
+	<stdio.h>
+
+1512759196 c:\users\hygor\documents\github\dcc045-2017.3-cpm\parser.h
+	"ast.h"
+
+1513139301 c:\users\hygor\documents\github\dcc045-2017.3-cpm\ast.h
+	<cstdlib>
+	"visitor.h"
+	"translator.h"
+	"intermediate_code.h"
+
+1512759250 c:\users\hygor\documents\github\dcc045-2017.3-cpm\visitor.h
+
+1513133649 c:\users\hygor\documents\github\dcc045-2017.3-cpm\translator.h
+
+1512947270 c:\users\hygor\documents\github\dcc045-2017.3-cpm\intermediate_code.h
+	"ir_visitor.h"
+	"generate_assembly.h"
+
+1512759250 c:\users\hygor\documents\github\dcc045-2017.3-cpm\ir_visitor.h
+	"intermediate_code.h"
+
+1512759250 c:\users\hygor\documents\github\dcc045-2017.3-cpm\generate_assembly.h
+	<stdio.h>
+	"intermediate_code.h"
+	"queue.h"
+
+1512759250 c:\users\hygor\documents\github\dcc045-2017.3-cpm\queue.h
+
+1512973582 source:c:\users\hygor\documents\github\dcc045-2017.3-cpm\intermediate_code.cpp
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	"intermediate_code.h"
+	"lex_analyzer.h"
+
+1513122696 source:c:\users\hygor\documents\github\dcc045-2017.3-cpm\ir_visitor.c
+	<iostream>
+	"ir_visitor.h"
+	"lex_analyzer.h"
+	"translator.h"
+
+1512759196 source:c:\users\hygor\documents\github\dcc045-2017.3-cpm\lex_analyzer.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"lex_analyzer.h"
+	"error_manager.h"
+	"table.h"
+
+1512759250 c:\users\hygor\documents\github\dcc045-2017.3-cpm\table.h
+	"symbol.h"
+
+1512848360 c:\users\hygor\documents\github\dcc045-2017.3-cpm\symbol.h
+	"ast.h"
+	"table.h"
+
+1513142183 source:c:\users\hygor\documents\github\dcc045-2017.3-cpm\parser.c
+	"parser.h"
+	"lex_analyzer.h"
+	"error_manager.h"
+
+1512759250 source:c:\users\hygor\documents\github\dcc045-2017.3-cpm\queue.cpp
+	<cstdlib>
+	"queue.h"
+
+1513147647 source:c:\users\hygor\documents\github\dcc045-2017.3-cpm\translator.cpp
+	<cstdio>
+	<cstring>
+	<typeinfo>
+	"intermediate_code.h"
+	"translator.h"
+	"ast.h"
+	"lex_analyzer.h"
+	"table.h"
+	"semantic_analyzer.h"
+
+1512759250 c:\users\hygor\documents\github\dcc045-2017.3-cpm\semantic_analyzer.h
+	"visitor.h"
+	"table.h"
+
+1513139301 source:c:\users\hygor\documents\github\dcc045-2017.3-cpm\visitor.cpp
+	<iostream>
+	<cstring>
+	"visitor.h"
+	"ast.h"
+	"lex_analyzer.h"
+
+1513139300 source:c:\users\hygor\documents\github\dcc045-2017.3-cpm\ast.cpp
+	"ast.h"
+
+1513017514 source:c:\users\hygor\documents\github\dcc045-2017.3-cpm\generate_assembly.c
+	<stdio.h>
+	<string.h>
+	"generate_assembly.h"
+	"translator.h"
+	"lex_analyzer.h"
+
+1513142172 source:c:\users\hygor\documents\github\dcc045-2017.3-cpm\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lex_analyzer.h"
+	"parser.h"
+	"semantic_analyzer.h"
+	"error_manager.h"
+	"generate_assembly.h"
+
+1513143283 source:c:\users\hygor\documents\github\dcc045-2017.3-cpm\semantic_analyzer.c
+	"semantic_analyzer.h"
+	"table.h"
+	"lex_analyzer.h"
+	"error_manager.h"
+	<typeinfo>
+
+1512848360 source:c:\users\hygor\documents\github\dcc045-2017.3-cpm\symbol.cpp
+	<cstdlib>
+	"symbol.h"
+
+1512834774 source:c:\users\hygor\documents\github\dcc045-2017.3-cpm\table.cpp
+	<cstring>
+	<cstdlib>
+	<iostream>
+	"table.h"
+

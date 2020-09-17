@@ -1,0 +1,28 @@
+int main() {
+  int a;
+}
+
+/*int c(){
+  int a, c
+  if(a){
+    a = 8;
+  }
+}*/
+
+/*int c(){
+  int a, c
+  if(a){
+    a = 8;
+  }
+};*/
+
+/*int a() {
+  if (a) {
+    a =
+  }
+}*/
+
+/*
+int main()
+
+}*/
